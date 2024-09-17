@@ -49,6 +49,10 @@ public class PlayerControl : MonoBehaviour
         {
             jumping = false;
         }
+        if (collision.gameObject.CompareTag("lava"))
+        {
+            Destroy(gameObject);
+        }
     }
     public void ReadJump(InputAction.CallbackContext context)
     {

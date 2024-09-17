@@ -6,7 +6,9 @@ using UnityEngine.UI;
 public class GameControl : MonoBehaviour
 {
     public Text scoreText;
+    public GameObject panel;
     private PlayerControl playerControl;
+    public GameObject player;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +21,8 @@ public class GameControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (player==null){
+        }
     }
     private void UpdateScore(int newScore)
     {
