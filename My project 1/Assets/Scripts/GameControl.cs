@@ -9,6 +9,7 @@ public class GameControl : MonoBehaviour
     public GameObject panel;
     private PlayerControl playerControl;
     public GameObject player;
+    public Text finalText;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +23,8 @@ public class GameControl : MonoBehaviour
     void Update()
     {
         if (player==null){
+            panel.SetActive(true);
+            finalText.text = "Game Over";
         }
     }
     private void UpdateScore(int newScore)
